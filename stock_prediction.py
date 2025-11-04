@@ -12,7 +12,6 @@ from parameters import *
 from visualizations import visualize_sentiment
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline, BertTokenizer
 import torch
-from train_classification_model import process_sentiment_csv
 pd.set_option('display.float_format', lambda x: f'{x:.4f}')
 
 
@@ -220,6 +219,6 @@ def fin_bert_sentiment_analysis():
     visualize_sentiment(df_daily, stock_data)
 if __name__ == "__main__":
     fin_bert_sentiment_analysis()
-    
+
     
 
